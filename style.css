@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  font-size: 10px;
+}
+
+.container {
+  background-color: white;
+  width: 1200px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.htwo {
+  font-weight: 50;
+  font-size:50px ;
+  margin: 20px;
+}
+
+nav {
+  position: relative; 
+  width: 100%;
+  min-height: 500px;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: aliceblue;
+  z-index: 0;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('image-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 85px;
+  padding: 30px;
+}
+
+.sections {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.box {
+  display: flex;
+  border: 2px solid white;
+  width: 550px;
+  font-weight: 300;  
+  font-size: 35px;
+  margin: 50px 110px;
+  
+}
+
+.containernav {
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 {
+  position: relative;
+  margin: 50px auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 img {
+  display: block;
+  width: 50%; 
+}
+
+.box1 {
+  position: absolute;
+  top: 70%;              
+  left: 40%;          
+  transform: translateY(-50%); 
+  background-color: white;
+  color: black;
+  padding: 30px;
+  width: 500px;
+  height: 150px;         
+}
+@media (max-width: 400px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .htwo {
+    font-weight: 50;
+    font-size: 40px ;
+    margin: 20px;
+  }
+  
+  .sections {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+  }
+  
+  .container1 img {
+    width: 100%;
+  }
+  .box{
+    font-size: 25px;
+    font-weight:-10;
+    display: flex;
+    justify-content: center;
+    align-content: center ;
+    width: 360px;
+    margin: 10px ;
+    margin-right: 10px;
+  }
+
+  .box1 {
+    position: static;
+    width: 90%;
+    height: auto;
+    transform: none;
+  }
+}
