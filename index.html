@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./design/webfonts">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"     crossorigin="anonymous"></script>  
     <title>Document</title>
 </head>
-<body>
+<body class="m-0 p-0 ">
     <div class="container">
         <nav>
             <div class="background">
@@ -41,6 +45,63 @@
         </div>
         </div>
     </div>
-   
+    <div class="contain m-30 p-5 ">
+        <div class="text flex items-center justify-between mb-17 font-light ml-12 mr-11">
+            <h2 class="text-4xl  uppercase ">Our creations</h2>
+            <button class="hidden sm:block">SEE ALL</button>
+        </div>
+        <div class="images ">
+            <div class="one flex justify-center items-center gap-5 mb-5">
+                <div class="img1 filter">
+                    <img src="./design/img/image-deep-earth.jpg" class="h-120">
+                </div>
+                <div class="img2 filter">
+                    <img src="./design/img/image-night-arcade.jpg" class="h-120">
+                </div>
+                <div class="img3 filter">
+                    <img src="./design/img/image-soccer-team.jpg" class="h-120">
+                </div>
+                <div class="img4 filter">
+                    <img src="./design/img/image-grid.jpg" class="h-120">
+                </div>
+            </div>
+            <div class="one flex justify-center items-center gap-5">
+                <div class="img5 filter">
+                    <img src="./design/img/image-from-above.jpg" class="h-120">
+                </div>
+                <div class="img6 filter">
+                    <img src="./design/img/image-pocket-borealis.jpg" class="h-120">
+                </div>
+                <div class="img7 filter">
+                    <img src="./design/img/image-curiosity.jpg" class="h-120">
+                </div>
+                <div class="img8 filter">
+                    <img src="./design/img/image-fisheye.jpg" class="h-120">
+                </div>
+            </div>
+        </div>
+        <button class="block sm:hidden" style="margin:30px auto 90px; letter-spacing: 4px; padding: 7px 33px;" >SEE ALL</button>
+    </div>
+    <div class="footer bg-black text-white flex items-center justify-between pl-35 pr-35 pt-7 pb-7">
+        <div class="one flex flex-col color-white">
+            <h2 class="mb-5 font-bold text-xl">loopstudios</h2>
+            <div class="titles flex gap-5 text-xs text-[#eee]">
+                <p>About</p>
+                <p>Careers</p>
+                <p>Events</p> 
+                <p>Products</p>
+                <p>Support</p>
+            </div>
+        </div>
+        <div class="two flex flex-col items-end">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="text-xs pr-3 mt-4 text-[#918d8ded]">© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+    </div>   
 </body>
 </html>
