@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    border: 2px solid black;
+    padding: 5px 35px;
+    cursor: pointer;
+}
+.filter {
+    position: relative;
+   
+}
+.filter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+ .img1::after,.img2::after,.img3::after,.img4::after,.img5::after,.img6::after,.img7::after,.img8::after{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 50px;
+    opacity:.8 ;
+    font-weight: 40;
+    line-height: 1.0;
+    z-index: 5;
+    font-size: 35px;
+}
+.img1::after{ 
+    content: 'Deep earth';
+}
+.img2::after{
+    content: 'Night arcade';
+}
+.img3::after{
+    content: 'Soccer team VR';
+    width:150px;
+}
+.img4::after{
+    content: 'The grid';
+}
+.img5::after{
+    content: 'From up above VR';
+    width: 170px;
+}
+.img6::after{
+    content: 'Pocket borealis';
+}
+.img7::after{
+    content: 'The curiosity';
+}
+.img8::after{
+    content: 'Make it fisheye';
+    width: 170px;
+} 
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+/*  */
+@media (max-width:400px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .contain{
+        margin: 20px;
+    }
+    .text h2{
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+    .images .one {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: self-start;
+        margin-bottom: 20px;
+    }
+    .filter{
+        width: 100%;
+    }
+    .images img {
+        width: 100%;
+        height: 150px;
+        object-fit:cover;
+
+    }
+    .filter::after{
+        font-size: 30px;
+        bottom: 23px;
+        opacity: .9;
+        left:20px;
+    }
+    .filter::before{
+        background-color:rgba(0, 0, 0, 0.2) ;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px ;
+    }
+    .footer .two{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .two p{
+       margin: 0;
+       padding: 0;
+       margin-top: 10px;
+    }
+    .footer .titles{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+}
